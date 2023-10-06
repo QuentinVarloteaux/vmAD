@@ -73,6 +73,9 @@ param _artifactsLocation string = deployment().properties.templateLink.uri
 @secure()
 param _artifactsLocationSasToken string = ''
 
+@description('The DNS prefix for the public IP address used by the Load Balancer')
+param dnsPrefix string
+
 var storageAccountName = 'bootdiags${uniqueString(resourceGroup().id)}'
 var nicName = concat('nic-${vmAdName}')
 var virtualNetworkName = concat('VNET-',nomClient,'-${location}')

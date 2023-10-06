@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.22.6.54827",
-      "templateHash": "9310056769463326556"
+      "templateHash": "11304089739994692143"
     }
   },
   "parameters": {
@@ -138,6 +138,12 @@
       "defaultValue": "",
       "metadata": {
         "description": "Auto-generated token to access _artifactsLocation. Leave it blank unless you need to provide your own value."
+      }
+    },
+    "dnsPrefix": {
+      "type": "string",
+      "metadata": {
+        "description": "The DNS prefix for the public IP address used by the Load Balancer"
       }
     }
   },
