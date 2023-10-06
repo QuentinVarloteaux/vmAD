@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.22.6.54827",
-      "templateHash": "10912767083786357548"
+      "templateHash": "9310056769463326556"
     }
   },
   "parameters": {
@@ -352,7 +352,7 @@
           "ModulesUrl": "[uri(parameters('_artifactsLocation'), format('DSC/CreateADPDC.zip{0}', parameters('_artifactsLocationSasToken')))]",
           "ConfigurationFunction": "CreateADPDC.ps1\\CreateADPDC",
           "Properties": {
-            "DomaineName": "[parameters('domainName')]",
+            "DomainName": "[parameters('domainName')]",
             "AdminCreds": {
               "UserName": "[parameters('adminUsername')]",
               "Password": "PrivateSettingsRef:AdminPassword"
