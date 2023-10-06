@@ -16,7 +16,14 @@ param vmAdName string = concat(nomClient,'-AD')
 param osVersion string = '2022-datacenter-azure-edition'
 
 @description('Taille de la machine virtuelle')
-param vmSize string = 'Standard_B2ms'
+@allowed([
+  'Standard_B1ms'
+  'Standard_B2s'
+  'Standard_B2ms'
+  'Standard_D2s_v3'
+  'Standard_D4s_v3'
+])
+param vmSize string
 
 @description('Nom de l administrateur de la machine virtuelle')
 param adminUsername string
