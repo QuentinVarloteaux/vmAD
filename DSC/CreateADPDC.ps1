@@ -99,9 +99,9 @@ configuration CreateADPDC
             DomainName                    = $DomainName
             DomainAdministratorCredential = $DomainCreds
             SafemodeAdministratorPassword = $DomainCreds
-            DatabasePath                  = "F:\NTDS"
-            LogPath                       = "F:\NTDS"
-            SysvolPath                    = "F:\SYSVOL"
+            DatabasePath                  = "C:\Windows\NTDS"
+            LogPath                       = "C:\Windows\NTDS"
+            SysvolPath                    = "C:\Windows\SYSVOL"
             DependsOn                     = @("[xDisk]ADDataDisk", "[WindowsFeature]ADDSInstall")
         } 
 
